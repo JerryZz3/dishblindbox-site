@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>菜品盲盒 · 今天吃什么</title>
+<meta name="description" content="136 道中国菜，轻点一下随机决定今晚吃什么。离线可用，不收集任何信息。">
+<style>
+  :root { color-scheme: light dark; --brand: #c0392b; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; padding: 48px 24px 72px;
+    font: 16px/1.75 -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #1c1c1e;
+    background: linear-gradient(180deg, #fdf3ec 0%, #fff 46%, #f7fbfa 100%);
+  }
+  .card {
+    width: 100%; max-width: 560px; text-align: center;
+  }
+  .icon {
+    width: 96px; height: 96px; border-radius: 22px; margin: 0 auto 22px; display: block;
+    box-shadow: 0 12px 32px rgba(192, 57, 43, 0.18);
+  }
+  h1 { font-size: 32px; letter-spacing: -0.02em; margin: 0 0 10px; }
+  .tagline { color: #6b6b70; margin: 0 0 32px; }
+  ul { list-style: none; padding: 0; margin: 0 0 36px; text-align: left; }
+  li {
+    padding: 12px 16px; margin: 8px 0; border-radius: 14px;
+    background: rgba(255, 255, 255, 0.86); border: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 15px; color: #3a3a3c;
+  }
+  li b { color: #1c1c1e; }
+  .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    padding: 11px 22px; border-radius: 999px; font-size: 15px; font-weight: 600;
+    text-decoration: none; transition: opacity 0.15s ease;
+  }
+  .btn-primary { background: var(--brand); color: #fff; }
+  .btn-ghost { background: rgba(0, 0, 0, 0.05); color: #1c1c1e; }
+  .btn:hover { opacity: 0.86; }
+  footer { margin-top: 56px; color: #9a9aa0; font-size: 13px; text-align: center; }
+  footer a { color: inherit; }
+  @media (prefers-color-scheme: dark) {
+    body { background: linear-gradient(180deg, #201512 0%, #000 46%, #0c1514 100%); color: #f2f2f7; }
+    .tagline { color: #a1a1a6; }
+    li { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.08); color: #c7c7cc; }
+    li b { color: #f2f2f7; }
+    .btn-ghost { background: rgba(255, 255, 255, 0.12); color: #f2f2f7; }
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="icon" src="icon.png" alt="菜品盲盒 App 图标" width="96" height="96">
+
+    <h1>菜品盲盒</h1>
+    <p class="tagline">今天吃什么？交给一点点随机。</p>
+
+    <ul>
+      <li><b>136 道中国菜</b>，滚动长条随机抽出今晚的菜</li>
+      <li><b>14 个菜系</b>，粤港、川渝、江浙沪、湘鄂、闽台、云贵桂……</li>
+      <li><b>自定义菜品</b>，自己加的菜只保存在本机</li>
+      <li><b>不收集信息</b>，不联网也能用，没有广告和追踪</li>
+    </ul>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="support.html">使用帮助</a>
+      <a class="btn btn-ghost" href="privacy.html">隐私政策</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 菜品盲盒 · 菜品照片来自 Unsplash 与 Wikimedia Commons，许可见 App 内「图片来源」页</p>
+  </footer>
+</body>
+</html>
